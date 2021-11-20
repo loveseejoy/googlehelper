@@ -1,0 +1,101 @@
+#autoStudyBtn {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    top: 60%;
+    right: 20px;
+    z-index: 100;
+}
+
+  #autoStudyBox {
+    width: 130px;
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: -40px;
+    z-index: 200;
+    background: #fff;
+    box-shadow: 0px 3px 8px #eee;
+  }
+
+  .box-item {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .wechat-pay {
+    display: block;
+    width: 44px;
+    height: 25px;
+    margin-left: 8px;
+  }
+
+  .auto {
+    font-size: 12px;
+    width: 44px;
+    padding: 2px;
+    text-align: center;
+    background: #ccc;
+    color: #fff;
+    margin-right: 8px;
+  }
+
+  input[type=checkbox] {
+    margin: 0;
+  }
+
+  /* 必须是input为 checkbox class 添加 switch 才能实现以下效果 */
+  input[type='checkbox'].switch{
+    margin-right: 8px;
+    outline: none;
+    appearance: none;
+    position: relative;
+    width: 44px;
+    height: 22px;
+    background: #ccc;
+    border-radius: 20px;
+    transition: border-color .3s, background-color .3s;
+  }
+
+  input[type='checkbox'].switch::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 2px #999;
+    transition:.4s;
+    top: 3px;
+    position: absolute;
+    left: 3px;
+  }
+
+  input[type='checkbox'].switch:checked {
+    background: rgb(19, 206, 102);
+  }
+  /* 当input[type=checkbox]被选中时：伪元素显示下面样式 位置发生变化 */
+  input[type='checkbox'].switch:checked::after {
+    content: '';
+    position: absolute;
+    left: 60%;
+    top: 3px;
+  }
+
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+
+  
+ 
+

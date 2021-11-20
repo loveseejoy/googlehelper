@@ -1,0 +1,34 @@
+{
+    "name": "SeejoyTest",
+    "version": "1.0.0",
+    "minimum_chrome_version": "18.0",
+    "description": "",
+    "homepage_url": "http://www.baidu.com",
+    "permissions": [
+        "tabs",
+        "https://donghuacj.ct-edu.com.cn/*"
+    ],
+    "icons": {
+        "48": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://donghuacj.ct-edu.com.cn/*",
+                "https://dhujj.ct-edu.com.cn/*"
+            ],
+            "css": ["main.css"],
+            "js": [
+                "js/jquery-3.4.1.min.js",
+                "js/devtools.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "js/jquery-3.4.1.min.js",
+        "intercept.js",
+        "main.css"
+    ],
+    "background": {},
+    "manifest_version": 2
+}
